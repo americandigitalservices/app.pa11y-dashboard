@@ -3,11 +3,10 @@ services:
   web:
     build: .
     ports:
-      - "8000:4000"
+      - "8310:8310"
     links:
       - database:mongodb
   database:
-    platform: linux/x86_64
-    image: mongo:latest
+    image: mongo:7.0.5-rc0-jammy
     ports:
       - "27017"

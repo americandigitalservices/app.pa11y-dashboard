@@ -12,7 +12,7 @@ ENV NODE_ENV ${NODE_ENV:-production}
 # Retrieve the dashboard
 RUN git clone https://github.com/pa11y/dashboard.git && cd dashboard && npm i
 
-EXPOSE 4000
+EXPOSE 8310
 EXPOSE 3000
 
 COPY production.json /dashboard/config/production.json

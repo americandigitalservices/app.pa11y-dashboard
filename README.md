@@ -17,4 +17,4 @@ Once you see terminal output from `web_1` and `database_1`, Pa11y Dashboard shou
 [pa11y dashboard]: https://github.com/pa11y/dashboard
 [pa11y project]: http://pa11y.org/
 [docker]: https://www.docker.com/products/docker
-[localhost]: http://localhost:8000
+[localhost]: http://localhost:8310
