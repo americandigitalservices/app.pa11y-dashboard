@@ -1,12 +1,17 @@
 # pa11y-dashboard
 services:
   web:
+    container_name: pa11y-dashboard
+    restart: always
     build: .
     ports:
       - "8310:8310"
     links:
-      - database:mongodb
-  database:
-    image: mongo:7.0.5-rc0-jammy
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - ./data:/data/db
     ports:
-      - "27017"
+      - "27017:27017"
