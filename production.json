@@ -9,8 +9,11 @@
     "port": 3000,
     "cron": "0 30 0 * * *",
     "chromeLaunchConfig": {
-       "args": ["--no-sandbox"]
+       "executablePath": "/usr/bin/chromium",
+       "args": [
+         "--no-sandbox",
+         "--disable-dev-shm-usage"
+       ]
     }
-
   }
 }
