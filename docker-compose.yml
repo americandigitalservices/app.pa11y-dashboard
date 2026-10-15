@@ -2,8 +2,10 @@
 services:
   web:
     container_name: pa11y-dashboard
-    restart: always
-    build: .
+    restart: "no"
+    build:
+      context: .
+      pull: true
     ports:
       - "8310:8310"
     depends_on:
@@ -11,6 +13,7 @@ services:
   mongo:
     container_name: mongo
     image: mongo:latest
+    restart: "no"
     volumes:
       - ./data:/data/db
     ports:

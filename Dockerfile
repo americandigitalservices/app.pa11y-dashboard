@@ -1,4 +1,4 @@
-FROM node:18-bullseye
+FROM node:18-bookworm
 
 # Install chromium and essential dependencies, skipping recommended but unnecessary packages
 RUN apt-get update -y && apt-get install -y \
